@@ -18,7 +18,7 @@ int max_number_of_balloons(std::string text) {
 
     int balloons = freq['b'];
 
-    // devide double character frequency by 2, this will give us the minimum possible number of ballooons
+    // devide double character frequency by 2, this will give us the maximum possible number of ballooons
     freq['l'] /= 2;
     freq['o'] /= 2;
 
