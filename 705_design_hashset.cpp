@@ -9,21 +9,21 @@ class MyHashSet {
     public:
         void add(int key) {
             // allocate memory when we really need it
-            if (key > this->values.size())
-                this->values.resize(key);
+            if (key >= this->values.size())
+                this->values.resize(key + 1);
 
-            this->values[key == 0 ? key : key - 1] = true;
+            this->values[key] = true;
         }
 
         void remove(int key) {
-            if (key <= this->values.size()) {
-                this->values[key == 0 ? key : key - 1] = false;
+            if (key < this->values.size()) {
+                this->values[key] = false;
             }
         }
 
         bool contains(int key) {
-            if (key <= this->values.size()) {
-                return this->values[key == 0 ? key : key - 1];
+            if (key < this->values.size()) {
+                return this->values[key];
             }
 
             return false;
