@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-// pretty simular to https://leetcode.com/problems/design-hashset/
+// pretty similar to https://leetcode.com/problems/design-hashset/
 // nothing to comment
 class MyHashMap {
     private:
