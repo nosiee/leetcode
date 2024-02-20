@@ -24,7 +24,7 @@ bool validPalindrome(std::string s) {
             l++;
             r--;
         } else {
-            // i think this line makes some sence. in other people solutions they're just call the check function and that's it.
+            // i think this line makes some sense. in other people solutions they just call the check function and that's it.
             // but do we really need to keep checking the string, even if we meet two different characters and their neighboring characters are not the same
             // i mean:
             //
