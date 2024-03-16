@@ -4,7 +4,7 @@
 bool is_valid(std::string s) {
     std::stack<char> st;
 
-    // the problmes is pretty easy if you know how to stack works and how to use it
+    // the problem is pretty easy if you know how to stack works and how to use it
     for (int i = 0; i < s.size(); i++) {
         // push every open parentheses to the stack
         if (s[i] == '(' || s[i] == '[' || s[i] == '{') {
