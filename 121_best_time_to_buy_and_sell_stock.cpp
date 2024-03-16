@@ -9,7 +9,7 @@ int max_profit(std::vector<int> &prices) {
     for (int b = 0, s = 1; s < prices.size();) {
         // pick a two numbers, if buy equal or more than sell then set b to s, because
 
-        // if prices[b] >= prices[s] we dont need to keep looking at max profit for prices[b], because there is a number that less than prices[b], which will give as, much more profit
+        // if prices[b] >= prices[s] we dont need to keep looking at max profit for prices[b], because there is a number that less than prices[b], which will give us much more profit
         // so we just set buy index to sell and go next
         if (prices[b] >= prices[s]) {
             b = s;
@@ -17,7 +17,7 @@ int max_profit(std::vector<int> &prices) {
             max = std::max(max, prices[s] - prices[b]);
         }
 
-        // again, if we found such a number that prices[b] < prices[s] we CAN keep looking for the next max profit, until we meet something less than prices[b]
+        // again, if we found such a number that prices[b] < prices[s] we CAN keep looking for the next max profit, until we meet something less than current prices[b]
         s++;
     }
 
